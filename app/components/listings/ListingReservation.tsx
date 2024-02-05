@@ -42,21 +42,21 @@ const ListingReservation: React.FC<
           $ {price}
         </div>
         <div className="font-light text-neutral-600">
-          night
+          /month
         </div>
       </div>
       <hr />
-      <Calendar
-        value={dateRange}
-        disabledDates={disabledDates}
-        onChange={(value) => 
-          onChangeDate(value.selection)}
-      />
+   <div className="flex flex-row items-center gap-1 p-4">
+    contact
+    <br />
+    <br />
+    whatsapp
+   </div>
       <hr />
       <div className="p-4">
         <Button 
           disabled={disabled} 
-          label="Reserve" 
+          label="check vacancy" 
           onClick={onSubmit}
         />
       </div>

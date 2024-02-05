@@ -39,7 +39,7 @@ const Search = () => {
       return `${diff} Days`;
     }
 
-    return 'Any Week'
+    return 'Any price'
   }, [startDate, endDate]);
 
   const guestLabel = useMemo(() => {
@@ -47,7 +47,7 @@ const Search = () => {
       return `${guestCount} Guests`;
     }
 
-    return 'Add Guests';
+    return 'Any size';
   }, [guestCount]);
 
   return ( 
@@ -112,7 +112,7 @@ const Search = () => {
           <div 
             className="
               p-2 
-              bg-rose-500 
+              bg-[#2F74FD] 
               rounded-full 
               text-white
             "

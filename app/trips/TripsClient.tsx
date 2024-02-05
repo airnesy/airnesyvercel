@@ -42,8 +42,8 @@ const TripsClient: React.FC<TripsClientProps> = ({
   return (
     <Container>
       <Heading
-        title="Trips"
-        subtitle="Where you've been and where you're going"
+        title="vacancy requests"
+        subtitle="properties you have requested for vacancy"
       />
       <div 
         className="
@@ -54,7 +54,7 @@ const TripsClient: React.FC<TripsClientProps> = ({
           md:grid-cols-3 
           lg:grid-cols-4
           xl:grid-cols-5
-          2xl:grid-cols-6
+          2xl:grid-cols-4
           gap-8
         "
       >
@@ -66,7 +66,7 @@ const TripsClient: React.FC<TripsClientProps> = ({
             actionId={reservation.id}
             onAction={onCancel}
             disabled={deletingId === reservation.id}
-            actionLabel="Cancel reservation"
+            actionLabel="Cancel vacancy request"
             currentUser={currentUser}
           />
         ))}

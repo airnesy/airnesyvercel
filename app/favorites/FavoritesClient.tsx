@@ -17,7 +17,7 @@ const FavoritesClient: React.FC<FavoritesClientProps> = ({
     <Container>
       <Heading
         title="Favorites"
-        subtitle="List of places you favorited!"
+        subtitle="List of properties you find intresting!"
       />
       <div 
         className="
@@ -28,7 +28,7 @@ const FavoritesClient: React.FC<FavoritesClientProps> = ({
           md:grid-cols-3 
           lg:grid-cols-4
           xl:grid-cols-5
-          2xl:grid-cols-6
+          2xl:grid-cols-4
           gap-8
         "
       >

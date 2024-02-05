@@ -31,7 +31,7 @@ const SearchModal = () => {
   const [step, setStep] = useState(STEPS.LOCATION);
 
   const [location, setLocation] = useState<CountrySelectValue>();
-  const [guestCount, setGuestCount] = useState(1);
+  const [guestCount, setguestCount] = useState(1);
   const [roomCount, setRoomCount] = useState(1);
   const [bathroomCount, setBathroomCount] = useState(1);
   const [dateRange, setDateRange] = useState<Range>({
@@ -120,7 +120,7 @@ const SearchModal = () => {
   let bodyContent = (
     <div className="flex flex-col gap-8">
       <Heading
-        title="Where do you wanna go?"
+        title="Where do you wanna stay?"
         subtitle="Find the perfect location!"
       />
       <CountrySelect 
@@ -137,13 +137,12 @@ const SearchModal = () => {
     bodyContent = (
       <div className="flex flex-col gap-8">
         <Heading
-          title="When do you plan to go?"
-          subtitle="Make sure everyone is free!"
+          title="What is your budget?"
+          subtitle="choose your price range"
         />
-        <Calendar
-          onChange={(value) => setDateRange(value.selection)}
-          value={dateRange}
-        />
+       
+
+       
       </div>
     )
   }
@@ -152,21 +151,21 @@ const SearchModal = () => {
     bodyContent = (
       <div className="flex flex-col gap-8">
         <Heading
-          title="More information"
-          subtitle="Find your perfect place!"
+          title="Find your perfect property"
+          subtitle="what type place of place are you looking for!"
         />
         <Counter 
-          onChange={(value) => setGuestCount(value)}
+          onChange={(value) => setguestCount(value)}
           value={guestCount}
-          title="Guests" 
-          subtitle="How many guests are coming?"
+          title="Size" 
+          subtitle="Size in sqm?"
         />
         <hr />
         <Counter 
           onChange={(value) => setRoomCount(value)}
           value={roomCount}
-          title="Rooms" 
-          subtitle="How many rooms do you need?"
+          title="no. of bedrooms" 
+          subtitle="How many bedrooms do you need?"
         />        
         <hr />
         <Counter 
@@ -174,7 +173,7 @@ const SearchModal = () => {
             setBathroomCount(value)
           }}
           value={bathroomCount}
-          title="Bathrooms"
+          title="no. of Bathrooms"
           subtitle="How many bahtrooms do you need?"
         />
       </div>

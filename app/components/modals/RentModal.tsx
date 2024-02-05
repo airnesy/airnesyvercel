@@ -164,7 +164,7 @@ const RentModal = () => {
       <div className="flex flex-col gap-8">
         <Heading
           title="Where is your place located?"
-          subtitle="Help guests find you!"
+          subtitle="Help tetants find you!"
         />
         <CountrySelect 
           value={location} 
@@ -180,26 +180,26 @@ const RentModal = () => {
       <div className="flex flex-col gap-8">
         <Heading
           title="Share some basics about your place"
-          subtitle="What amenitis do you have?"
+          subtitle="What are the property specs?"
         />
         <Counter 
           onChange={(value) => setCustomValue('guestCount', value)}
           value={guestCount}
-          title="Guests" 
-          subtitle="How many guests do you allow?"
+          title=" room size " 
+          subtitle="what is the size of your property in sqm?"
         />
         <hr />
         <Counter 
           onChange={(value) => setCustomValue('roomCount', value)}
           value={roomCount}
-          title="Rooms" 
-          subtitle="How many rooms do you have?"
+          title="no. of bedrooms" 
+          subtitle="How many bedrooms do you have?"
         />
         <hr />
         <Counter 
           onChange={(value) => setCustomValue('bathroomCount', value)}
           value={bathroomCount}
-          title="Bathrooms" 
+          title="no. of Bathrooms" 
           subtitle="How many bathrooms do you have?"
         />
       </div>
@@ -211,7 +211,7 @@ const RentModal = () => {
       <div className="flex flex-col gap-8">
         <Heading
           title="Add a photo of your place"
-          subtitle="Show guests what your place looks like!"
+          subtitle="Show tenants what your place looks like!"
         />
         <ImageUpload
           onChange={(value) => setCustomValue('imageSrc', value)}
@@ -254,7 +254,7 @@ const RentModal = () => {
       <div className="flex flex-col gap-8">
         <Heading
           title="Now, set your price"
-          subtitle="How much do you charge per night?"
+          subtitle="How much do you charge per month  ?"
         />
         <Input
           id="price"
@@ -274,7 +274,7 @@ const RentModal = () => {
     <Modal
       disabled={isLoading}
       isOpen={rentModal.isOpen}
-      title="Airbnb your home!"
+      title="airnesy your property!"
       actionLabel={actionLabel}
       onSubmit={handleSubmit(onSubmit)}
       secondaryActionLabel={secondaryActionLabel}

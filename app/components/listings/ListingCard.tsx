@@ -42,14 +42,14 @@ const ListingCard: React.FC<ListingCardProps> = ({
 
   const handleCancel = useCallback(
     (e: React.MouseEvent<HTMLButtonElement>) => {
-    e.stopPropagation();
+      e.stopPropagation();
 
-    if (disabled) {
-      return;
-    }
+      if (disabled) {
+        return;
+      }
 
-    onAction?.(actionId)
-  }, [disabled, onAction, actionId]);
+      onAction?.(actionId)
+    }, [disabled, onAction, actionId]);
 
   const price = useMemo(() => {
     if (reservation) {
@@ -69,6 +69,10 @@ const ListingCard: React.FC<ListingCardProps> = ({
 
     return `${format(start, 'PP')} - ${format(end, 'PP')}`;
   }, [reservation]);
+
+  const roomCount = useMemo(() => {
+    return data.roomCount; // Replace 'data.roomCount' with the correct path to retrieve room count from 'data'
+  }, [data.roomCount]);
 
   return (
     <div 
@@ -107,19 +111,24 @@ const ListingCard: React.FC<ListingCardProps> = ({
               currentUser={currentUser}
             />
           </div>
+          <div className="flex flex-row items-center gap-1 absolute bottom-3 left-3">
+          
+          </div>
         </div>
         <div className="font-semibold text-lg">
           {location?.region}, {location?.label}
         </div>
         <div className="font-light text-neutral-500">
-          {reservationDate || data.category}
+        
+        {roomCount} bedroom {/* Display the room count here */} {reservationDate || data.category}
         </div>
-        <div className="flex flex-row items-center gap-1">
-          <div className="font-semibold">
+        
+        <div className="flex flex-row items-center gap-1" >
+          <div className="font-semibold">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
             $ {price}
           </div>
           {!reservation && (
-            <div className="font-light">night</div>
+            <div className="font-light">/month</div>
           )}
         </div>
         {onAction && actionLabel && (
@@ -132,7 +141,7 @@ const ListingCard: React.FC<ListingCardProps> = ({
         )}
       </div>
     </div>
-   );
+  );
 }
  
 export default ListingCard;

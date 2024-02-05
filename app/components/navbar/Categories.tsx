@@ -23,79 +23,79 @@ import Container from '../Container';
 
 export const categories = [
   {
-    label: 'Beach',
+    label: 'Apartment',
     icon: TbBeach,
-    description: 'This property is close to the beach!',
+    description: 'This property is an apartment!',
   },
   {
-    label: 'Windmills',
+    label: 'bungalow',
     icon: GiWindmill,
-    description: 'This property is has windmills!',
+    description: 'This property is a bungalow!',
   },
   {
-    label: 'Modern',
+    label: 'villa',
     icon: MdOutlineVilla,
-    description: 'This property is modern!'
+    description: 'This property is a villa!'
   },
   {
-    label: 'Countryside',
+    label: 'mansion',
     icon: TbMountain,
-    description: 'This property is in the countryside!'
+    description: 'This property is in the mansion!'
   },
   {
-    label: 'Pools',
+    label: 'cottage',
     icon: TbPool,
-    description: 'This is property has a beautiful pool!'
+    description: 'This is property has a cottage!'
   },
   {
-    label: 'Islands',
+    label: 'condominium',
     icon: GiIsland,
-    description: 'This property is on an island!'
+    description: 'This property is a condominium!'
   },
   {
-    label: 'Lake',
+    label: 'town house',
     icon: GiBoatFishing,
-    description: 'This property is near a lake!'
+    description: 'This property is a town house!'
   },
   {
-    label: 'Skiing',
+    label: 'duplex',
     icon: FaSkiing,
-    description: 'This property has skiing activies!'
+    description: 'This property is a duplex!'
   },
   {
     label: 'Castles',
     icon: GiCastle,
-    description: 'This property is an ancient castle!'
+    description: 'This property is a castle!'
   },
   {
-    label: 'Caves',
+    label: 'office space',
     icon: GiCaveEntrance,
-    description: 'This property is in a spooky cave!'
+    description: 'This property is an office space!'
   },
   {
-    label: 'Camping',
+    label: 'warehouse',
     icon: GiForestCamp,
-    description: 'This property offers camping activities!'
+    description: 'This property is warehouse!'
   },
   {
-    label: 'Arctic',
+    label: 'semi-detached',
     icon: BsSnow,
-    description: 'This property is in arctic environment!'
+    description: 'This property is a semi-detached house!'
   },
   {
-    label: 'Desert',
+    label: 'Bedsitter',
     icon: GiCactus,
-    description: 'This property is in the desert!'
+    description: 'This property is in bedsitter!'
   },
   {
-    label: 'Barns',
+    label: 'Studio',
     icon: GiBarn,
-    description: 'This property is in a barn!'
+    description: 'This property is a studio apartment!'
   },
   {
-    label: 'Lux',
+    label: 'Single-room',
     icon: IoDiamond,
-    description: 'This property is brand new and luxurious!'
+    description: 'This property is a single room!'
   }
 ]
 

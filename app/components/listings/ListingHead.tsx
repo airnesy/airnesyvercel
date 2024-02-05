@@ -33,20 +33,106 @@ const ListingHead: React.FC<ListingHeadProps> = ({
         title={title}
         subtitle={`${location?.region}, ${location?.label}`}
       />
-      <div className="
+
+
+<div style={{ display: 'flex' }}className="
           w-full
           h-[60vh]
           overflow-hidden 
           rounded-xl
           relative
-        "
-      >
+        "  >
+      {/* Left Div */}
+      <div style={{ width: '75%',marginRight: '1%' }}className="
+          w-full
+          h-[60vh]
+          overflow-hidden 
+          
+          relative
+        "  >
         <Image
           src={imageSrc}
+        
           fill
           className="object-cover w-full"
           alt="Image"
         />
+      </div>
+
+      {/* Right Div */}
+      <div style={{ width: '25%',  }}>
+        {/* Nested Divs */}
+        <div style={{ height: '25%', marginBottom: '2%'  }}className="
+          w-full
+          h-[60vh]
+          overflow-hidden 
+          
+          relative
+        "  >
+        <Image
+          src={imageSrc}
+        
+          fill
+          className="object-cover w-full"
+          alt="Image"
+        />
+          
+        </div>
+        <div style={{ height: '25%', marginBottom: '2%' }}className="
+          w-full
+          h-[60vh]
+          overflow-hidden 
+          
+          relative
+        "  >
+        <Image
+          src={imageSrc}
+        
+          fill
+          className="object-cover w-full"
+          alt="Image"
+        />
+        </div>
+        <div style={{ height: '25%', marginBottom: '2%' }}className="
+          w-full
+          h-[60vh]
+          overflow-hidden 
+          
+          relative
+        "  >
+        <Image
+          src={imageSrc}
+        
+          fill
+          className="object-cover w-full"
+          alt="Image"
+        />
+        </div>
+        <div style={{ height: '25%', marginBottom: '2%' }}className="
+          w-full
+          h-[60vh]
+          overflow-hidden 
+          
+          relative
+        "  >
+        <Image
+          src={imageSrc}
+        
+          fill
+          className="object-cover w-full"
+          alt="Image"
+        />
+        </div>
+      </div>
+    </div>
+
+
+      <div 
+      >
+        
+
+
+
         <div
           className="
             absolute
@@ -60,6 +146,8 @@ const ListingHead: React.FC<ListingHeadProps> = ({
           />
         </div>
       </div>
+
+
     </>
    );
 }
