@@ -8,7 +8,9 @@ import { SafeUser } from "@/app/types";
 
 import Avatar from "../Avatar";
 import ListingCategory from "./ListingCategory";
-const Map = dynamic(() => import('../Map'));
+const Map = dynamic(() => import('../Map'), {
+  loading: () => <div>Loading Map...</div>,
+});
 
  
 
